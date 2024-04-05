@@ -23,7 +23,6 @@ df = load_data()
 
 # define generations as dict, mostly from Pew definitions, years inclusive
 gendict = {
-   "Pre-1900": (1, 1900),
    "GI Gen": (1901, 1927),
    "Silent": (1928, 1945),
    "Boomer": (1946, 1964),
