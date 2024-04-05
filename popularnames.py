@@ -66,7 +66,7 @@ for generation, year_range in gendict.items():
        generation_data = namedf[(namedf["year"] >= year_range[0]) & (namedf["year"] <= year_range[1])]
        total_n = generation_data["n"].sum()
        chartdf.append({"Generation": generation, "Total": total_n}) # ensures main chart data is straightforward to graph
-main_chart = px.bar(chartdf, x = "Generation", y = "Total", title = "Name Popularity by Generation", color_discrete_sequence = ["#66C2A5"])
+main_chart = px.bar(chartdf, x = "Generation", y = "Total", title = "Name Popularity (Absolute) by Generation", color_discrete_sequence = ["#66C2A5"])
 st.plotly_chart(main_chart)
 
 # sidebar pie chart
